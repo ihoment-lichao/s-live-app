@@ -1,0 +1,18 @@
+com.lanjing.live.app-jetified-android-gif-drawable-1.2.28-0 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/174c030059d882a62da3e3c2265c4c3a/transformed/jetified-android-gif-drawable-1.2.28/res
+com.lanjing.live.app-jetified-lib.5plus.base-release-1 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/res
+com.lanjing.live.app-media-1.0.0-2 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/2489e820bce207fbf49b48342b869d07/transformed/media-1.0.0/res
+com.lanjing.live.app-jetified-drawee-2.5.0-3 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/2927a51aadbec081ad2da059ca84d72b/transformed/jetified-drawee-2.5.0/res
+com.lanjing.live.app-appcompat-1.1.0-4 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/5d45a9836d09ad1a72179c0dde2a23dd/transformed/appcompat-1.1.0/res
+com.lanjing.live.app-recyclerview-1.1.0-5 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/6d4ea35faec5ef91dbb4f282b1b6ffbf/transformed/recyclerview-1.1.0/res
+com.lanjing.live.app-coordinatorlayout-1.0.0-6 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/9720ae9756cb169bd4a920e616104d71/transformed/coordinatorlayout-1.0.0/res
+com.lanjing.live.app-jetified-appcompat-resources-1.1.0-7 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/98bd3f0cc5cb4537c0aaf8d9800593e1/transformed/jetified-appcompat-resources-1.1.0/res
+com.lanjing.live.app-core-1.1.0-8 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/a3631ad903f6c15a49a501c1d775a6be/transformed/core-1.1.0/res
+com.lanjing.live.app-jetified-uniapp-v8-release-9 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/bcb39942db3fac1f0e4cb91e6fc676bb/transformed/jetified-uniapp-v8-release/res
+com.lanjing.live.app-jetified-glide-4.9.0-10 /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/c1e6ec6e9541ee746a28dcf27e1ed05f/transformed/jetified-glide-4.9.0/res
+com.lanjing.live.app-pngs-11 /Users/lichao/govee/s-live-app/Live-android/app/build/generated/res/pngs/debug
+com.lanjing.live.app-resValues-12 /Users/lichao/govee/s-live-app/Live-android/app/build/generated/res/resValues/debug
+com.lanjing.live.app-packageDebugResources-13 /Users/lichao/govee/s-live-app/Live-android/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.lanjing.live.app-packageDebugResources-14 /Users/lichao/govee/s-live-app/Live-android/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.lanjing.live.app-debug-15 /Users/lichao/govee/s-live-app/Live-android/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.lanjing.live.app-debug-16 /Users/lichao/govee/s-live-app/Live-android/app/src/debug/res
+com.lanjing.live.app-main-17 /Users/lichao/govee/s-live-app/Live-android/app/src/main/res

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.lanjing.live.app-mergeDebugResources-13:/values-v32/values-v32.xml",
+            "map": [
+                {
+                    "source": "/Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/res/values-v32/values-v32.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "330"
+                    }
+                }
+            ]
+        }
+    ]
+}

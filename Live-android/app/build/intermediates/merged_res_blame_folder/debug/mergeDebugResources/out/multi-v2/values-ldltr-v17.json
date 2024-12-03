@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.lanjing.live.app-mergeDebugResources-13:/values-ldltr-v17/values-ldltr-v17.xml",
+            "map": [
+                {
+                    "source": "/Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/bcb39942db3fac1f0e4cb91e6fc676bb/transformed/jetified-uniapp-v8-release/res/values-ldltr-v17/values-ldltr-v17.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    }
+                }
+            ]
+        }
+    ]
+}

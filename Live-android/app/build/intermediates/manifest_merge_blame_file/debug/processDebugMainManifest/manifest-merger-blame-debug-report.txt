@@ -1,0 +1,358 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.lanjing.live"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10
+11    <supports-screens
+11-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:7:5-12:39
+12        android:anyDensity="true"
+12-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:8:9-34
+13        android:largeScreens="true"
+13-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:9:9-36
+14        android:normalScreens="true"
+14-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:10:9-37
+15        android:resizeable="true"
+15-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:11:9-34
+16        android:smallScreens="true" />
+16-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:12:9-36
+17
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 适配android 13 图片选择权限 -->
+18-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:14:5-81
+18-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:14:22-78
+19    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+19-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:17:5-76
+19-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:17:22-73
+20    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+20-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:18:5-75
+20-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:18:22-72
+21    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+21-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:19:5-90
+21-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:19:22-87
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:20:5-67
+22-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:20:22-64
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:21:5-79
+23-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:21:22-76
+24    <!--
+25    <uses-permission
+26        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+27    -->
+28    <!-- 华为修改角标需要设置权限 -->
+29    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" /> <!-- vivo 修改角标需要设置权限 -->
+29-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:27:5-91
+29-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:27:22-88
+30    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON" />
+30-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:29:5-83
+30-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:29:22-80
+31
+32    <queries>
+32-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:31:5-40:15
+33        <intent>
+33-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:32:9-34:18
+34            <action android:name="android.intent.action.MAIN" />
+34-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:23:17-69
+34-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:23:25-66
+35        </intent>
+36        <intent>
+36-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:35:9-39:18
+37            <action android:name="android.intent.action.VIEW" />
+37-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:41:17-69
+37-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:41:25-66
+38
+39            <category android:name="android.intent.category.DEFAULT" />
+39-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:39:17-76
+39-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:39:27-73
+40        </intent>
+41    </queries>
+42
+43    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+44    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+44-->[oaid_sdk_1.0.25.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/0182d89cce529fe68aff82062d686e9a/transformed/jetified-oaid_sdk_1.0.25/AndroidManifest.xml:13:5-76
+44-->[oaid_sdk_1.0.25.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/0182d89cce529fe68aff82062d686e9a/transformed/jetified-oaid_sdk_1.0.25/AndroidManifest.xml:13:22-73
+45    <uses-permission android:name="freemme.permission.msa" />
+45-->[oaid_sdk_1.0.25.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/0182d89cce529fe68aff82062d686e9a/transformed/jetified-oaid_sdk_1.0.25/AndroidManifest.xml:15:5-62
+45-->[oaid_sdk_1.0.25.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/0182d89cce529fe68aff82062d686e9a/transformed/jetified-oaid_sdk_1.0.25/AndroidManifest.xml:15:22-59
+46
+47    <application
+47-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:5:5-48:19
+48        android:name="io.dcloud.application.DCloudApplication"
+48-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:173:9-63
+49        android:allowBackup="true"
+49-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:6:9-35
+50        android:allowClearUserData="true"
+50-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:7:9-42
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.1.0] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/a3631ad903f6c15a49a501c1d775a6be/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+52        android:debuggable="true"
+53        android:extractNativeLibs="true"
+54        android:icon="@drawable/icon"
+54-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:8:9-38
+55        android:label="@string/app_name"
+55-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:9:9-41
+56        android:largeHeap="true"
+56-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:10:9-33
+57        android:supportsRtl="true"
+57-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:11:9-35
+58        android:testOnly="true"
+59        android:usesCleartextTraffic="true" >
+59-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:175:9-44
+60        <activity
+60-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:12:9-26:20
+61            android:name="io.dcloud.PandoraEntry"
+61-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:14:13-50
+62            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+62-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:15:13-83
+63            android:exported="true"
+63-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:13:13-36
+64            android:hardwareAccelerated="true"
+64-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:17:13-47
+65            android:launchMode="singleTask"
+65-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:16:13-44
+66            android:screenOrientation="user"
+66-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:19:13-45
+67            android:theme="@style/TranslucentTheme"
+67-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:18:13-52
+68            android:windowSoftInputMode="adjustResize" >
+68-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:20:13-55
+69            <intent-filter>
+69-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:22:13-25:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:23:17-69
+70-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:23:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:24:17-77
+72-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:24:27-74
+73            </intent-filter>
+74        </activity>
+75        <activity
+75-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:27:9-44:20
+76            android:name="io.dcloud.PandoraEntryActivity"
+76-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:29:13-58
+77            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize|uiMode"
+77-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:31:13-151
+78            android:exported="true"
+78-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:28:13-36
+79            android:hardwareAccelerated="true"
+79-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:32:13-47
+80            android:launchMode="singleTask"
+80-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:30:13-44
+81            android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
+81-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:33:13-89
+82            android:screenOrientation="user"
+82-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:34:13-45
+83            android:theme="@style/DCloudTheme"
+83-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:35:13-47
+84            android:windowSoftInputMode="adjustResize" >
+84-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:36:13-55
+85            <intent-filter>
+85-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:38:13-43:29
+86                <category android:name="android.intent.category.DEFAULT" />
+86-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:39:17-76
+86-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:39:27-73
+87                <category android:name="android.intent.category.BROWSABLE" />
+87-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:40:17-78
+87-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:40:27-75
+88
+89                <action android:name="android.intent.action.VIEW" />
+89-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:41:17-69
+89-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:41:25-66
+90
+91                <data android:scheme=" " />
+91-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:42:17-44
+91-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:42:23-41
+92            </intent-filter>
+93        </activity>
+94
+95        <meta-data
+95-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:45:9-47:64
+96            android:name="dcloud_appkey"
+96-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:46:13-41
+97            android:value="5ff096095d9bc6d272ffdc255c755159" />
+97-->/Users/lichao/govee/s-live-app/Live-android/app/src/main/AndroidManifest.xml:47:13-61
+98        <!--
+99        <activity
+100            android:name="io.dcloud.imagepick.CustomGalleryActivity"
+101            android:noHistory="true"
+102            android:exported="false"/>
+103        -->
+104        <activity
+104-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:184:9-190:56
+105            android:name="io.dcloud.feature.nativeObj.photoview.PhotoActivity"
+105-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:185:13-79
+106            android:configChanges="orientation|keyboardHidden"
+106-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:186:13-63
+107            android:exported="false"
+107-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:187:13-37
+108            android:noHistory="false"
+108-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:188:13-38
+109            android:screenOrientation="behind"
+109-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:189:13-47
+110            android:theme="@style/DCloudTheme.Light" />
+110-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:190:13-53
+111        <activity
+111-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:191:9-200:58
+112            android:name="io.dcloud.WebAppActivity"
+112-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:192:13-52
+113            android:configChanges="orientation|keyboard|keyboardHidden|smallestScreenSize|screenLayout|screenSize|mcc|mnc|fontScale|navigation"
+113-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:193:13-144
+114            android:hardwareAccelerated="true"
+114-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:194:13-47
+115            android:icon="@drawable/dcloud_recent"
+115-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:195:13-51
+116            android:label="@string/stream_my"
+116-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:196:13-46
+117            android:launchMode="singleTask"
+117-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:197:13-44
+118            android:screenOrientation="portrait"
+118-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:198:13-49
+119            android:theme="@style/DCloudTheme"
+119-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:199:13-47
+120            android:windowSoftInputMode="adjustResize" />
+120-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:200:13-55
+121        <activity
+121-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:201:9-205:75
+122            android:name="io.dcloud.ProcessMediator"
+122-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:202:13-53
+123            android:excludeFromRecents="true"
+123-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:203:13-46
+124            android:exported="false"
+124-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:204:13-37
+125            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+125-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:205:13-72
+126        <activity
+126-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:206:9-212:20
+127            android:name="io.dcloud.WebviewActivity"
+127-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:207:13-53
+128            android:exported="false"
+128-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:208:13-37
+129            android:screenOrientation="portrait"
+129-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:209:13-49
+130            android:theme="@style/AppCompat.ThemeNoTitleBar"
+130-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:210:13-61
+131            android:windowSoftInputMode="adjustPan" >
+131-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:211:13-52
+132        </activity> <!-- gallery******start -->
+133        <activity
+133-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:215:9-220:63
+134            android:name="com.dmcbig.mediapicker.PickerActivity"
+134-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:216:13-65
+135            android:configChanges="orientation|screenSize"
+135-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:217:13-59
+136            android:exported="false"
+136-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:218:13-37
+137            android:theme="@style/DeviceDefault.Light"
+137-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:219:13-55
+138            android:windowSoftInputMode="stateAlwaysHidden" />
+138-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:220:13-60
+139        <activity
+139-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:221:9-226:63
+140            android:name="com.dmcbig.mediapicker.PreviewActivity"
+140-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:222:13-66
+141            android:configChanges="orientation|screenSize"
+141-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:223:13-59
+142            android:exported="false"
+142-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:224:13-37
+143            android:theme="@style/DeviceDefault.Light"
+143-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:225:13-55
+144            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- gallery******end -->
+144-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:226:13-60
+145        <provider
+145-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:229:9-237:20
+146            android:name="io.dcloud.common.util.DCloud_FileProvider"
+146-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:230:13-69
+147            android:authorities="com.lanjing.live.dc.fileprovider"
+147-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:231:13-67
+148            android:exported="false"
+148-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:232:13-37
+149            android:grantUriPermissions="true" >
+149-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:233:13-47
+150            <meta-data
+150-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:234:13-236:64
+151                android:name="android.support.FILE_PROVIDER_PATHS"
+151-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:235:17-67
+152                android:resource="@xml/dcloud_file_provider" />
+152-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:236:17-61
+153        </provider>
+154        <!--
+155            <meta-data
+156            android:name="DCLOUD_STREAMAPP_CHANNEL"
+157            android:value="io.dcloud.%APPID%|%APPID%|" />
+158        -->
+159        <meta-data
+159-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:244:9-246:35
+160            android:name="android.max_aspect"
+160-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:245:13-46
+161            android:value="2.4" />
+161-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:246:13-32
+162
+163        <activity
+163-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:248:9-253:63
+164            android:name="io.dcloud.feature.gallery.imageedit.IMGEditActivity"
+164-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:249:13-79
+165            android:configChanges="orientation|keyboardHidden|screenSize"
+165-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:250:13-74
+166            android:exported="false"
+166-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:251:13-37
+167            android:theme="@style/ImageEditTheme"
+167-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:252:13-50
+168            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- 广告相关配置开始 -->
+168-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:253:13-60
+169        <activity
+169-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:256:9-261:55
+170            android:name="io.dcloud.sdk.activity.WebViewActivity"
+170-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:257:13-66
+171            android:exported="false"
+171-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:258:13-37
+172            android:screenOrientation="portrait"
+172-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:259:13-49
+173            android:theme="@style/ThemeNoTitleBar"
+173-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:260:13-51
+174            android:windowSoftInputMode="adjustPan" />
+174-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:261:13-52
+175
+176        <service
+176-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:263:9-266:72
+177            android:name="io.dcloud.sdk.base.service.DownloadService"
+177-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:264:13-70
+178            android:exported="false"
+178-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:265:13-37
+179            android:permission="android.permission.BIND_JOB_SERVICE" />
+179-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:266:13-69
+180
+181        <provider
+181-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:268:9-276:20
+182            android:name="io.dcloud.sdk.base.service.provider.DCloudAdFileProvider"
+182-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:269:13-84
+183            android:authorities="com.lanjing.live.dc.fileprovider"
+183-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:270:13-67
+184            android:exported="false"
+184-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:271:13-37
+185            android:grantUriPermissions="true" >
+185-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:272:13-47
+186            <meta-data
+186-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:234:13-236:64
+187                android:name="android.support.FILE_PROVIDER_PATHS"
+187-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:235:17-67
+188                android:resource="@xml/dcloud_gg_file_provider" />
+188-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:236:17-61
+189        </provider>
+190
+191        <receiver
+191-->[uniapp-v8-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/bcb39942db3fac1f0e4cb91e6fc676bb/transformed/jetified-uniapp-v8-release/AndroidManifest.xml:30:9-34:20
+192            android:name="com.taobao.weex.WXGlobalEventReceiver"
+192-->[uniapp-v8-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/bcb39942db3fac1f0e4cb91e6fc676bb/transformed/jetified-uniapp-v8-release/AndroidManifest.xml:31:13-65
+193            android:enabled="true"
+193-->[uniapp-v8-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/bcb39942db3fac1f0e4cb91e6fc676bb/transformed/jetified-uniapp-v8-release/AndroidManifest.xml:32:13-35
+194            android:exported="false" >
+194-->[uniapp-v8-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/bcb39942db3fac1f0e4cb91e6fc676bb/transformed/jetified-uniapp-v8-release/AndroidManifest.xml:33:13-37
+195        </receiver>
+196    </application>
+197
+198</manifest>
