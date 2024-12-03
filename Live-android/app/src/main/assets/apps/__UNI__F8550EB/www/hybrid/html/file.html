@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>文件上传</title>
+		<style type="text/css">
+			.upload-icon {
+				height: 32px;
+				width: 32px;
+			}
+
+			.upload-text {
+				width: 60%;
+				line-height: 48px;
+				color: #ffffff;
+				background: #3c9cff;
+				text-align: center;
+				margin: 0 auto;
+				margin-top: 50%;
+				border-radius: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="file" id="inputFile" accept="" style="display: none;">
+		<!-- <img id="uploadFile" class="upload-icon" src="../../static/img/public_icon_file_uplaod.png"><img> -->
+		<div class="upload-text" id="uploadFile">
+			请选择文件
+		</div>
+	</body>
+	<script type="text/javascript" src="./uni.webview.1.5.6.js"></script>
+	<script type="text/javascript">
+		function vwReady() { //是否直接调起上传
+			const queryParams = new URLSearchParams(location.search)
+			const $fileInput = document.getElementById('inputFile')
+			const $uploadBtn = document.getElementById('uploadFile')
+			$uploadBtn.onclick = () => {
+				$fileInput.click();
+			}
+			$fileInput.onchange = (e) => {
+				const file = $fileInput.files[0]
+				const fileName = file.name || ''
+				var validExts = new Array(".xlsx", ".xls", ".csv");
+				var fileExt = '.' + fileName.split('.').pop();
+				if (validExts.indexOf(fileExt.toLowerCase()) < 0) {
+					alert("请上传" +
+						validExts.toString() + " 类型文件");
+					return false;
+				}
+				var formData = new FormData();
+				formData.append('file', file);
+				formData.append('code', queryParams.get('code'));
+				formData.append('fileType', 1);
+				formData.append('fileName', fileName);
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', queryParams.get('uploadUrl'));
+				xhr.setRequestHeader('token', queryParams.get('token'));
+				xhr.setRequestHeader('originFrom', 'erp');
+				xhr.setRequestHeader('Authorization', `Bearer ${queryParams.get('token')}`);
+				xhr.send(formData);
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 4 && xhr.status == 200) {
+						const resObj = JSON.parse(xhr.responseText)
+						if (resObj.code == 0 && resObj.data) {
+							//发送消息到app端
+							uni.postMessage({
+								data: {
+									origin: queryParams.get('origin'),
+									fileName: resObj.data.fileName,
+									fileUrl: resObj.data.fileUrl
+								},
+							})
+							uni.navigateBack({
+								delta: 1
+							});
+						} else {
+							alert("上传失败，请前往ERP质量系统操作");
+						}
+					}
+				}
+			}
+		}
+		//接受app端消息
+		// window.addEventListener('message', function(event) {
+		// 	const data = event.data;
+		// 	// const resdata = event.data.data;
+		// 	if (data.action == 'uploadAction') {}
+		// });
+		document.addEventListener('UniAppJSBridgeReady', function() {
+			vwReady()
+		})
+	</script>
+</html>
