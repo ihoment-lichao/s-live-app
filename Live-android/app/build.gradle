@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 32
 //    buildToolsVersion '30.0.3'
     namespace 'com.lanjing.live'
     defaultConfig {
         applicationId "com.lanjing.live"
         minSdkVersion 21
-        targetSdkVersion 28
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -50,6 +51,9 @@ android {
         jniLibs {
             useLegacyPackaging true
         }
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 

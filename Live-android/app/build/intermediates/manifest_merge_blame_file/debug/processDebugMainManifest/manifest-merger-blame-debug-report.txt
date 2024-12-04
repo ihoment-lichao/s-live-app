@@ -6,7 +6,7 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-9        android:targetSdkVersion="28" />
+9        android:targetSdkVersion="32" />
 10
 11    <supports-screens
 11-->[lib.5plus.base-release.aar] /Applications/Android Studio.app/Contents/jbr/Contents/Home/caches/8.9/transforms/188cebcf6dc894b00407111cec2ad9b2/transformed/jetified-lib.5plus.base-release/AndroidManifest.xml:7:5-12:39
